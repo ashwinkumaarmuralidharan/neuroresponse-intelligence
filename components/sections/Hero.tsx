@@ -22,18 +22,23 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section 
-      className="section-padding bg-gradient-hero text-white"
+      className="section-padding text-white relative overflow-hidden bg-gradient-hero"
       style={{
-        background: 'linear-gradient(135deg, #0A1929 0%, #051422 50%, #0A1929 100%)',
+        background: 'linear-gradient(135deg, #0A1929 0%, #14B8A6 50%, #0A1929 100%)',
         backgroundSize: '200% 200%',
       }}
     >
-      <div className="container-custom">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-teal-light rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-teal-accent rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+      </div>
+      <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg">
             {headline}
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8">
+          <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md">
             {subtext}
           </p>
           {(primaryCTA || secondaryCTA) && (

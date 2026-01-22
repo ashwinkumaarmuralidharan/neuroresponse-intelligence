@@ -16,18 +16,23 @@ export default function ProductPage() {
     <>
       {/* Hero */}
       <section 
-        className="section-padding bg-gradient-hero text-white"
+        className="section-padding text-white relative overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #0A1929 0%, #051422 50%, #0A1929 100%)',
+          background: 'linear-gradient(135deg, #0A1929 0%, #14B8A6 50%, #0A1929 100%)',
           backgroundSize: '200% 200%',
+          animation: 'gradient-shift 15s ease infinite',
         }}
       >
-        <div className="container-custom">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-teal-light rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-teal-accent rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+        </div>
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
               How it works
             </h1>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-white drop-shadow-md">
               Our platform aims to predict neurostimulation responder probability
               using machine learning models trained on clinical and device data.
             </p>
@@ -36,13 +41,19 @@ export default function ProductPage() {
       </section>
 
       {/* What we do */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gradient-to-br from-white via-teal-light/5 to-white relative">
         <div className="container-custom">
           <SectionHeader
             title="What we do"
             description="Supporting clinical decision-making with AI-powered prediction"
           />
-          <div className="max-w-4xl mx-auto space-y-6 text-text-secondary">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow shadow-lg">
+                <Brain className="w-10 h-10 text-white" />
+              </div>
+            </div>
+            <div className="space-y-6 text-text-secondary">
             <p className="text-lg">
               NS-Predict.ai is designed to provide responder
               probability estimates before neurostimulation device implantation.
@@ -55,6 +66,7 @@ export default function ProductPage() {
               providing additional information to help clinicians make more
               informed patient selection decisions.
             </p>
+            </div>
           </div>
         </div>
       </section>
