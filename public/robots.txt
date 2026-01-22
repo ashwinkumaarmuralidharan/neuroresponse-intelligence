@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashwinkumaarmuralidharan.github.io/neuroresponse-intelligence/sitemap.xml
