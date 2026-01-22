@@ -11,7 +11,7 @@ import BrainNetworkIcon from "@/components/icons/BrainNetworkIcon";
 import { Target, BarChart3, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Home | NeuroResponse Intelligence",
+  title: "Home | NS-Predict.ai",
   description: "Predict neurostimulation responders before surgery. Reduce non-responder implants and improve patient selection for VNS therapy in drug-resistant epilepsy.",
 };
 
@@ -98,7 +98,7 @@ export default function HomePage() {
           />
           <div className="max-w-4xl mx-auto space-y-6 text-text-secondary">
             <p className="text-lg">
-              NeuroResponse Intelligence aims to predict responder probability
+              NS-Predict.ai aims to predict responder probability
               before surgery using machine learning models trained on clinical
               and device data. Our approach:
             </p>
@@ -209,7 +209,7 @@ export default function HomePage() {
       {/* Final CTA */}
       <CTA
         title="Ready to learn more?"
-        description="Contact us to discuss how NeuroResponse Intelligence can support your clinical practice."
+        description="Contact us to discuss how NS-Predict.ai can support your clinical practice."
         primaryCTA={{ label: "Get in touch", href: "/contact" }}
         secondaryCTA={{ label: "View our approach", href: "/approach" }}
       />

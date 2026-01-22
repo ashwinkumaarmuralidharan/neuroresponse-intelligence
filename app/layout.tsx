@@ -4,19 +4,19 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "NeuroResponse Intelligence | Predicting Neurostimulation Responders",
+  title: "NS-Predict.ai | Predicting Neurostimulation Responders",
   description: "Predicting neurostimulation responders before surgery. Supporting clinical decision-making for invasive vagus nerve stimulation (VNS) in drug-resistant epilepsy.",
   keywords: ["neurostimulation", "VNS", "epilepsy", "predictive analytics", "clinical decision support"],
-  authors: [{ name: "NeuroResponse Intelligence" }],
+  authors: [{ name: "NS-Predict.ai" }],
   openGraph: {
-    title: "NeuroResponse Intelligence | Predicting Neurostimulation Responders",
+    title: "NS-Predict.ai | Predicting Neurostimulation Responders",
     description: "Predicting neurostimulation responders before surgery.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NeuroResponse Intelligence",
+    title: "NS-Predict.ai",
     description: "Predicting neurostimulation responders before surgery.",
   },
   robots: {

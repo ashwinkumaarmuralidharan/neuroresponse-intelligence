@@ -3,8 +3,8 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import Card from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | NeuroResponse Intelligence",
-  description: "Privacy Policy for NeuroResponse Intelligence website. Learn how we handle your data.",
+  title: "Privacy Policy | NS-Predict.ai",
+  description: "Privacy Policy for NS-Predict.ai website. Learn how we handle your data.",
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                     1. Introduction
                   </h2>
                   <p>
-                    NeuroResponse Intelligence ("we," "our," or "us") is
+                    NS-Predict.ai ("we," "our," or "us") is
                     committed to protecting your privacy. This Privacy Policy
                     explains how we collect, use, disclose, and safeguard your
                     information when you visit our website.

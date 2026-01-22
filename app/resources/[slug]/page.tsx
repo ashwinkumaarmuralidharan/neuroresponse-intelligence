@@ -30,7 +30,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | NeuroResponse Intelligence`,
+    title: `${post.title} | NS-Predict.ai`,
     description: post.excerpt,
   };
 }
@@ -46,12 +46,12 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+      <section className="section-padding bg-gradient-hero text-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto animate-fade-in-up">
             <Link
               href="/resources"
-              className="inline-flex items-center text-gray-300 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center text-gray-300 hover:text-white mb-6 transition-colors hover-lift"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Resources

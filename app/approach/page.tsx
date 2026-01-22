@@ -5,7 +5,7 @@ import Card from "@/components/ui/Card";
 import { Database, Brain, Shield, CheckCircle2, FileSearch, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Approach | NeuroResponse Intelligence",
+  title: "Our Approach | NS-Predict.ai",
   description: "Learn about our model development lifecycle, clinical validation roadmap, and regulatory and quality mindset.",
 };
 

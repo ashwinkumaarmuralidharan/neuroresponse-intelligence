@@ -37,7 +37,7 @@ export default function ComparisonTable({
                   Before
                 </th>
                 <th className="px-6 py-4 text-left font-semibold text-teal-accent">
-                  With NeuroResponse
+                  With NS-Predict.ai
                 </th>
               </tr>
             </thead>

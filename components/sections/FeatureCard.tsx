@@ -15,9 +15,9 @@ export default function FeatureCard({
   className,
 }: FeatureCardProps) {
   return (
-    <Card className={className} hover>
+    <Card className={`${className} hover-lift`} hover>
       {icon && (
-        <div className="mb-4 text-teal-accent" aria-hidden="true">
+        <div className="mb-4 text-teal-accent transform transition-transform duration-300 hover:scale-110" aria-hidden="true">
           {icon}
         </div>
       )}

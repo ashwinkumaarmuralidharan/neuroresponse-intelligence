@@ -5,7 +5,7 @@ import VNSDeviceIcon from "@/components/icons/VNSDeviceIcon";
 import { Brain, Target, AlertCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "VNS for Drug-Resistant Epilepsy | NeuroResponse Intelligence",
+  title: "VNS for Drug-Resistant Epilepsy | NS-Predict.ai",
   description: "Learn about our initial focus: predicting responder status for vagus nerve stimulation (VNS) in patients with drug-resistant epilepsy.",
 };
 

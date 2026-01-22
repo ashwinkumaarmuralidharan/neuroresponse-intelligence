@@ -5,17 +5,17 @@ import CTA from "@/components/sections/CTA";
 import { Briefcase, GraduationCap, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Team | NeuroResponse Intelligence",
-  description: "Meet the team behind NeuroResponse Intelligence: combining expertise in business, regulatory affairs, and biomedical engineering.",
+  title: "Team | NS-Predict.ai",
+  description: "Meet the team behind NS-Predict.ai: combining expertise in business, regulatory affairs, and biomedical engineering.",
 };
 
 export default function TeamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+      <section className="section-padding bg-gradient-hero text-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Team</h1>
             <p className="text-xl text-gray-200">
               Combining expertise in business, regulatory affairs, and deep
@@ -30,15 +30,15 @@ export default function TeamPage() {
         <div className="container-custom">
           <SectionHeader
             title="Meet the founders"
-            description="Building NeuroResponse Intelligence"
+            description="Building NS-Predict.ai"
           />
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Founder & CEO */}
-              <Card className="text-center">
+              <Card className="text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="mb-6">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-teal-light flex items-center justify-center">
-                    <Briefcase className="w-16 h-16 text-teal-accent" />
+                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow">
+                    <Briefcase className="w-16 h-16 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-navy mb-2">
@@ -58,7 +58,7 @@ export default function TeamPage() {
                   <p className="text-sm">
                     Ashwin brings extensive experience in navigating regulatory
                     pathways, quality management, and clinical affairs. His
-                    background ensures that NeuroResponse Intelligence is built
+                    background ensures that NS-Predict.ai is built
                     with regulatory awareness and quality principles from the
                     ground up.
                   </p>
@@ -66,10 +66,10 @@ export default function TeamPage() {
               </Card>
 
               {/* CTO */}
-              <Card className="text-center">
+              <Card className="text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="mb-6">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-teal-light flex items-center justify-center">
-                    <Briefcase className="w-16 h-16 text-teal-accent" />
+                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" style={{ animationDelay: '0.5s' }}>
+                    <Briefcase className="w-16 h-16 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-navy mb-2">
@@ -108,7 +108,7 @@ export default function TeamPage() {
               Based in Leuven, Belgium
             </h2>
             <p className="text-lg text-text-secondary">
-              We are building NeuroResponse Intelligence from Leuven, a hub of
+              We are building NS-Predict.ai from Leuven, a hub of
               innovation in healthcare and technology. Our location in the heart
               of Europe positions us well to collaborate with clinical partners
               and researchers across the continent.

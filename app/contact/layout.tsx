@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | NeuroResponse Intelligence",
-  description: "Get in touch with NeuroResponse Intelligence. Interested in collaboration, early access, or learning more?",
+  title: "Contact | NS-Predict.ai",
+  description: "Get in touch with NS-Predict.ai. Interested in collaboration, early access, or learning more?",
 };
 
 export default function ContactLayout({

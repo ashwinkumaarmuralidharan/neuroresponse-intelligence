@@ -21,9 +21,9 @@ export default function Hero({
   secondaryCTA,
 }: HeroProps) {
   return (
-    <section className="section-padding bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+    <section className="section-padding bg-gradient-hero text-white">
       <div className="container-custom">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             {headline}
           </h1>
@@ -33,12 +33,12 @@ export default function Hero({
           {(primaryCTA || secondaryCTA) && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {primaryCTA && (
-                <Button href={primaryCTA.href} variant="primary" size="lg">
+                <Button href={primaryCTA.href} variant="primary" size="lg" className="hover-lift">
                   {primaryCTA.label}
                 </Button>
               )}
               {secondaryCTA && (
-                <Button href={secondaryCTA.href} variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-navy">
+                <Button href={secondaryCTA.href} variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-navy hover-lift">
                   {secondaryCTA.label}
                 </Button>
               )}

@@ -7,8 +7,8 @@ import BrainNetworkIcon from "@/components/icons/BrainNetworkIcon";
 import { Database, Brain, FileText, Shield, Lock, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Product | NeuroResponse Intelligence",
-  description: "Learn how NeuroResponse Intelligence works: from data inputs through ML modeling to actionable reports that support clinical decision-making.",
+  title: "Product | NS-Predict.ai",
+  description: "Learn how NS-Predict.ai works: from data inputs through ML modeling to actionable reports that support clinical decision-making.",
 };
 
 export default function ProductPage() {
@@ -38,7 +38,7 @@ export default function ProductPage() {
           />
           <div className="max-w-4xl mx-auto space-y-6 text-text-secondary">
             <p className="text-lg">
-              NeuroResponse Intelligence is designed to provide responder
+              NS-Predict.ai is designed to provide responder
               probability estimates before neurostimulation device implantation.
               Our models analyze clinical data, device parameters, and optional
               biomarkers to generate risk stratification and responder likelihood

@@ -41,7 +41,7 @@ export default function ContactPage() {
     const subject = encodeURIComponent(
       formData.name
         ? `Contact from ${formData.name} - ${formData.organization || "Website"}`
-        : "Contact from NeuroResponse Intelligence Website"
+        : "Contact from NS-Predict.ai Website"
     );
     const body = encodeURIComponent(
       `Name: ${formData.name || "Not provided"}\n` +

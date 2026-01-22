@@ -22,9 +22,9 @@ export default function Navbar() {
     <nav className="bg-white border-b border-border sticky top-0 z-50" role="navigation" aria-label="Main navigation">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center space-x-2" aria-label="NeuroResponse Intelligence Home">
+          <Link href="/" className="flex items-center space-x-2" aria-label="NS-Predict.ai Home">
             <WaveformIcon className="w-6 h-6 text-teal-accent" />
-            <span className="font-bold text-xl text-navy">NeuroResponse</span>
+            <span className="font-bold text-xl text-navy">NS-Predict.ai</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -27,9 +27,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center space-x-2 mb-4" aria-label="NeuroResponse Intelligence Home">
+            <Link href="/" className="flex items-center space-x-2 mb-4" aria-label="NS-Predict.ai Home">
               <WaveformIcon className="w-6 h-6 text-teal-light" />
-              <span className="font-bold text-xl">NeuroResponse</span>
+              <span className="font-bold text-xl">NS-Predict.ai</span>
             </Link>
             <p className="text-gray-300 text-sm mb-2">
               Predicting neurostimulation responders before surgery.
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
           <p>
-            © {new Date().getFullYear()} NeuroResponse Intelligence. All rights reserved.
+            © {new Date().getFullYear()} NS-Predict.ai. All rights reserved.
           </p>
           <p className="mt-2 text-xs">
             This product is in development and is not yet cleared for clinical use.

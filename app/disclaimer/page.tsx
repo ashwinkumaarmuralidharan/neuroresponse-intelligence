@@ -4,8 +4,8 @@ import Card from "@/components/ui/Card";
 import { AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | NeuroResponse Intelligence",
-  description: "Important disclaimer regarding the use of NeuroResponse Intelligence products and website.",
+  title: "Disclaimer | NS-Predict.ai",
+  description: "Important disclaimer regarding the use of NS-Predict.ai products and website.",
 };
 
 export default function DisclaimerPage() {
@@ -26,7 +26,7 @@ export default function DisclaimerPage() {
                     Product in Development
                   </h3>
                   <p className="text-yellow-800 text-sm">
-                    NeuroResponse Intelligence products are currently in
+                    NS-Predict.ai products are currently in
                     development and are not yet cleared for clinical use. The
                     information on this website is for informational purposes
                     only and does not constitute medical advice or a medical
@@ -120,8 +120,8 @@ export default function DisclaimerPage() {
                     7. Limitation of Liability
                   </h2>
                   <p>
-                    To the fullest extent permitted by law, NeuroResponse
-                    Intelligence shall not be liable for any indirect,
+                    To the fullest extent permitted by law, NS-Predict.ai
+                    shall not be liable for any indirect,
                     incidental, special, consequential, or punitive damages, or
                     any loss of profits or revenues, whether incurred directly or
                     indirectly, or any loss of data, use, goodwill, or other

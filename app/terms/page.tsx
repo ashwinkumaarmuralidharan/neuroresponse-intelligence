@@ -3,8 +3,8 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import Card from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | NeuroResponse Intelligence",
-  description: "Terms of Use for NeuroResponse Intelligence website.",
+  title: "Terms of Use | NS-Predict.ai",
+  description: "Terms of Use for NS-Predict.ai website.",
 };
 
 export default function TermsPage() {
@@ -35,7 +35,7 @@ export default function TermsPage() {
                   </h2>
                   <p>
                     Permission is granted to temporarily access the materials on
-                    NeuroResponse Intelligence's website for personal,
+                    NS-Predict.ai's website for personal,
                     non-commercial transitory viewing only. This is the grant of
                     a license, not a transfer of title, and under this license
                     you may not:
@@ -53,8 +53,8 @@ export default function TermsPage() {
                     3. Disclaimer
                   </h2>
                   <p>
-                    The materials on NeuroResponse Intelligence's website are
-                    provided on an 'as is' basis. NeuroResponse Intelligence
+                    The materials on NS-Predict.ai's website are
+                    provided on an 'as is' basis. NS-Predict.ai
                     makes no warranties, expressed or implied, and hereby
                     disclaims and negates all other warranties including, without
                     limitation, implied warranties or conditions of
@@ -69,11 +69,11 @@ export default function TermsPage() {
                     4. Limitations
                   </h2>
                   <p>
-                    In no event shall NeuroResponse Intelligence or its suppliers
+                    In no event shall NS-Predict.ai or its suppliers
                     be liable for any damages (including, without limitation,
                     damages for loss of data or profit, or due to business
                     interruption) arising out of the use or inability to use the
-                    materials on NeuroResponse Intelligence's website.
+                    materials on NS-Predict.ai's website.
                   </p>
                 </div>
 
@@ -82,9 +82,9 @@ export default function TermsPage() {
                     5. Accuracy of Materials
                   </h2>
                   <p>
-                    The materials appearing on NeuroResponse Intelligence's
+                    The materials appearing on NS-Predict.ai's
                     website could include technical, typographical, or
-                    photographic errors. NeuroResponse Intelligence does not
+                    photographic errors. NS-Predict.ai does not
                     warrant that any of the materials on its website are
                     accurate, complete, or current.
                   </p>
@@ -95,10 +95,10 @@ export default function TermsPage() {
                     6. Links
                   </h2>
                   <p>
-                    NeuroResponse Intelligence has not reviewed all of the sites
+                    NS-Predict.ai has not reviewed all of the sites
                     linked to its website and is not responsible for the contents
                     of any such linked site. The inclusion of any link does not
-                    imply endorsement by NeuroResponse Intelligence of the site.
+                    imply endorsement by NS-Predict.ai of the site.
                   </p>
                 </div>
 
@@ -107,7 +107,7 @@ export default function TermsPage() {
                     7. Modifications
                   </h2>
                   <p>
-                    NeuroResponse Intelligence may revise these terms of service
+                    NS-Predict.ai may revise these terms of service
                     for its website at any time without notice. By using this
                     website you are agreeing to be bound by the then current
                     version of these terms of service.

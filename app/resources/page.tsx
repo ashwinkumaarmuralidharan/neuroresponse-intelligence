@@ -6,7 +6,7 @@ import { getAllPosts } from "@/lib/markdown";
 import { Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Resources | NeuroResponse Intelligence",
+  title: "Resources | NS-Predict.ai",
   description: "Articles, insights, and resources about neurostimulation, predictive analytics, and clinical decision support.",
 };
 
