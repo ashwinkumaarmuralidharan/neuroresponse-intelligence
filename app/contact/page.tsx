@@ -56,9 +56,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+      <section className="section-padding bg-gradient-hero text-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Get in Touch
             </h1>

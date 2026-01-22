@@ -49,9 +49,9 @@ export default function HomePage() {
       />
 
       {/* Trust Section */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-gradient-section">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <p className="text-xl text-text-secondary">
               Designed for collaboration with clinicians, hospitals, and researchers.
             </p>
@@ -103,30 +103,30 @@ export default function HomePage() {
               and device data. Our approach:
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-teal-light flex items-center justify-center">
-                  <WaveformIcon className="w-8 h-8 text-teal-accent" />
+              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow">
+                  <WaveformIcon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">Data Input</h3>
-                <p className="text-sm">
+                <p className="text-sm text-text-secondary">
                   Clinical data, device parameters, and optional biomarkers
                 </p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-teal-light flex items-center justify-center">
-                  <BrainNetworkIcon className="w-8 h-8 text-teal-accent" />
+              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.2s' }}>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" style={{ animationDelay: '0.3s' }}>
+                  <BrainNetworkIcon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">ML Modeling</h3>
-                <p className="text-sm">
+                <p className="text-sm text-text-secondary">
                   Risk stratification and responder likelihood assessment
                 </p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-teal-light flex items-center justify-center">
-                  <BarChart3 className="w-8 h-8 text-teal-accent" />
+              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.4s' }}>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" style={{ animationDelay: '0.6s' }}>
+                  <BarChart3 className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">Output Report</h3>
-                <p className="text-sm">
+                <p className="text-sm text-text-secondary">
                   Probability scores, confidence intervals, and interpretable
                   insights
                 </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
       {/* Initial Focus */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <div className="mb-4">
               <Badge variant="teal">Initial Focus</Badge>
             </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
               patient selection and outcomes.
             </p>
             <div className="mt-8">
-              <Button href="/vns-epilepsy" variant="outline">
+              <Button href="/vns-epilepsy" variant="outline" className="hover-lift">
                 Learn more about our use case
               </Button>
             </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
       </section>
 
       {/* Feature Highlights */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-gradient-section">
         <div className="container-custom">
           <SectionHeader
             title="Key features"
