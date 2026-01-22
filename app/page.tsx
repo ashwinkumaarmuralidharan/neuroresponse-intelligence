@@ -16,29 +16,6 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const faqItems = [
-    {
-      question: "Is this a medical device?",
-      answer:
-        "Our product is currently in development and is intended to support research and clinical decision-making. It is not a substitute for clinician judgment and is not yet cleared for clinical use. We are working toward appropriate regulatory pathways.",
-    },
-    {
-      question: "What data do you use?",
-      answer:
-        "Our models are designed to work with clinical data, device data, and optional biomarkers. All data handling follows strict privacy and security principles, with site-specific configuration to ensure compliance with local regulations.",
-    },
-    {
-      question: "How accurate is the prediction?",
-      answer:
-        "Our models are in development and validation. We aim to provide responder probability estimates with confidence intervals to support clinical decision-making. Performance metrics will be validated through appropriate clinical studies.",
-    },
-    {
-      question: "When will this be available?",
-      answer:
-        "We are currently in the research and development phase, working with clinical partners to validate our approach. Please contact us if you are interested in collaboration or early access.",
-    },
-  ];
-
   return (
     <>
       <Hero
@@ -284,7 +261,24 @@ export default function HomePage() {
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
             </div>
-            <FAQAccordion items={faqItems} />
+            <FAQAccordion items={[
+              {
+                question: "Is this a medical device?",
+                answer: "Our product is currently in development and is intended to support research and clinical decision-making. It is not a substitute for clinician judgment and is not yet cleared for clinical use. We are working toward appropriate regulatory pathways.",
+              },
+              {
+                question: "What data do you use?",
+                answer: "Our models are designed to work with clinical data, device data, and optional biomarkers. All data handling follows strict privacy and security principles, with site-specific configuration to ensure compliance with local regulations.",
+              },
+              {
+                question: "How accurate is the prediction?",
+                answer: "Our models are in development and validation. We aim to provide responder probability estimates with confidence intervals to support clinical decision-making. Performance metrics will be validated through appropriate clinical studies.",
+              },
+              {
+                question: "When will this be available?",
+                answer: "We are currently in the research and development phase, working with clinical partners to validate our approach. Please contact us if you are interested in collaboration or early access.",
+              },
+            ]} />
           </div>
         </div>
       </section>
