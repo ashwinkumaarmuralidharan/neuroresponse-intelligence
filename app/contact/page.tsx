@@ -56,7 +56,13 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding bg-gradient-hero text-white">
+      <section 
+        className="section-padding bg-gradient-hero text-white"
+        style={{
+          background: 'linear-gradient(135deg, #0A1929 0%, #051422 50%, #0A1929 100%)',
+          backgroundSize: '200% 200%',
+        }}
+      >
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">

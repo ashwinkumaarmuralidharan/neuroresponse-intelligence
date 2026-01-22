@@ -13,7 +13,13 @@ export default function TeamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-padding bg-gradient-hero text-white">
+      <section 
+        className="section-padding bg-gradient-hero text-white"
+        style={{
+          background: 'linear-gradient(135deg, #0A1929 0%, #051422 50%, #0A1929 100%)',
+          backgroundSize: '200% 200%',
+        }}
+      >
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Team</h1>
@@ -37,7 +43,12 @@ export default function TeamPage() {
               {/* Founder & CEO */}
               <Card className="text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="mb-6">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow">
+                  <div 
+                    className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow"
+                    style={{
+                      background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
+                    }}
+                  >
                     <Briefcase className="w-16 h-16 text-white" />
                   </div>
                 </div>

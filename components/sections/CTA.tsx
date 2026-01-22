@@ -28,8 +28,23 @@ export default function CTA({
     teal: "bg-teal-accent text-white",
   };
 
+  const variantStyles = {
+    default: {
+      background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
+    },
+    navy: {
+      background: '#0A1929',
+    },
+    teal: {
+      background: '#14B8A6',
+    },
+  };
+
   return (
-    <section className={`section-padding ${variants[variant]}`}>
+    <section 
+      className={`section-padding ${variants[variant]} text-white`}
+      style={variantStyles[variant]}
+    >
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>

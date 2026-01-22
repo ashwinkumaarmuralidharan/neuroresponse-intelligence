@@ -104,7 +104,12 @@ export default function HomePage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow">
+                <div 
+                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow"
+                  style={{
+                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
+                  }}
+                >
                   <WaveformIcon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">Data Input</h3>
@@ -113,7 +118,13 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.2s' }}>
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" style={{ animationDelay: '0.3s' }}>
+                <div 
+                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" 
+                  style={{ 
+                    animationDelay: '0.3s',
+                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
+                  }}
+                >
                   <BrainNetworkIcon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">ML Modeling</h3>
@@ -122,7 +133,13 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.4s' }}>
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" style={{ animationDelay: '0.6s' }}>
+                <div 
+                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" 
+                  style={{ 
+                    animationDelay: '0.6s',
+                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
+                  }}
+                >
                   <BarChart3 className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-navy mb-2">Output Report</h3>
