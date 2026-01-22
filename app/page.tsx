@@ -16,6 +16,25 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const faqItems = [
+    {
+      question: "Is this a medical device?",
+      answer: "Our product is currently in development and is intended to support research and clinical decision-making. It is not a substitute for clinician judgment and is not yet cleared for clinical use. We are working toward appropriate regulatory pathways.",
+    },
+    {
+      question: "What data do you use?",
+      answer: "Our models are designed to work with clinical data, device data, and optional biomarkers. All data handling follows strict privacy and security principles, with site-specific configuration to ensure compliance with local regulations.",
+    },
+    {
+      question: "How accurate is the prediction?",
+      answer: "Our models are in development and validation. We aim to provide responder probability estimates with confidence intervals to support clinical decision-making. Performance metrics will be validated through appropriate clinical studies.",
+    },
+    {
+      question: "When will this be available?",
+      answer: "We are currently in the research and development phase, working with clinical partners to validate our approach. Please contact us if you are interested in collaboration or early access.",
+    },
+  ];
+
   return (
     <>
       <Hero
@@ -59,49 +78,49 @@ export default function HomePage() {
               </div>
             </div>
             <div className="space-y-6 text-text-secondary">
-            <p className="text-lg">
-              Neurostimulation devices, such as vagus nerve stimulation (VNS) for
-              drug-resistant epilepsy, offer hope for patients who have exhausted
-              other treatment options. However, a significant portion of patients
-              do not respond to therapy, leading to:
-            </p>
-            <ul className="list-none space-y-3">
-              <li className="flex items-start space-x-3">
-                <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                </div>
-                <span>Unnecessary surgical procedures and associated risks</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-3 h-3 rounded-full bg-orange-500"></div>
-                </div>
-                <span>Delayed access to effective treatments</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-6 h-6 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <span>Patient burden and disappointment</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-3 h-3 rounded-full bg-pink-500"></div>
-                </div>
-                <span>Increased healthcare costs</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-3 h-3 rounded-full bg-purple-500"></div>
-                </div>
-                <span>Extended time-to-therapy for those who would benefit</span>
-              </li>
-            </ul>
-            <p className="text-lg">
-              Current selection criteria are limited, and there is a clear need
-              for better tools to predict responder likelihood before
-              implantation.
-            </p>
+              <p className="text-lg">
+                Neurostimulation devices, such as vagus nerve stimulation (VNS) for
+                drug-resistant epilepsy, offer hope for patients who have exhausted
+                other treatment options. However, a significant portion of patients
+                do not respond to therapy, leading to:
+              </p>
+              <ul className="list-none space-y-3">
+                <li className="flex items-start space-x-3">
+                  <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  </div>
+                  <span>Unnecessary surgical procedures and associated risks</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+                  </div>
+                  <span>Delayed access to effective treatments</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-6 h-6 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  </div>
+                  <span>Patient burden and disappointment</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-3 h-3 rounded-full bg-pink-500"></div>
+                  </div>
+                  <span>Increased healthcare costs</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-3 h-3 rounded-full bg-purple-500"></div>
+                  </div>
+                  <span>Extended time-to-therapy for those who would benefit</span>
+                </li>
+              </ul>
+              <p className="text-lg">
+                Current selection criteria are limited, and there is a clear need
+                for better tools to predict responder likelihood before
+                implantation.
+              </p>
             </div>
           </div>
         </div>
@@ -124,56 +143,57 @@ export default function HomePage() {
               </div>
             </div>
             <div className="space-y-6 text-text-secondary">
-            <p className="text-lg">
-              NS-Predict.ai aims to predict responder probability
-              before surgery using machine learning models trained on clinical
-              and device data. Our approach:
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border-2 border-teal-accent/20 shadow-lg hover:shadow-xl hover:border-teal-accent/40">
-                <div 
-                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow shadow-lg"
-                  style={{
-                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
-                  }}
-                >
-                  <WaveformIcon className="w-8 h-8 text-white" />
+              <p className="text-lg">
+                NS-Predict.ai aims to predict responder probability
+                before surgery using machine learning models trained on clinical
+                and device data. Our approach:
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border-2 border-teal-accent/20 shadow-lg hover:shadow-xl hover:border-teal-accent/40">
+                  <div
+                    className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow shadow-lg"
+                    style={{
+                      background: "linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)",
+                    }}
+                  >
+                    <WaveformIcon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-navy mb-2">Data Input</h3>
+                  <p className="text-sm text-text-secondary">
+                    Clinical data, device parameters, and optional biomarkers
+                  </p>
                 </div>
-                <h3 className="font-semibold text-navy mb-2">Data Input</h3>
-                <p className="text-sm text-text-secondary">
-                  Clinical data, device parameters, and optional biomarkers
-                </p>
-              </div>
-              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.2s' }}>
-                <div 
-                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" 
-                  style={{ 
-                    animationDelay: '0.3s',
-                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
-                  }}
-                >
-                  <BrainNetworkIcon className="w-8 h-8 text-white" />
+                <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: "0.2s" }}>
+                  <div
+                    className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow"
+                    style={{
+                      animationDelay: "0.3s",
+                      background: "linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)",
+                    }}
+                  >
+                    <BrainNetworkIcon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-navy mb-2">ML Modeling</h3>
+                  <p className="text-sm text-text-secondary">
+                    Risk stratification and responder likelihood assessment
+                  </p>
                 </div>
-                <h3 className="font-semibold text-navy mb-2">ML Modeling</h3>
-                <p className="text-sm text-text-secondary">
-                  Risk stratification and responder likelihood assessment
-                </p>
-              </div>
-              <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: '0.4s' }}>
-                <div 
-                  className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow" 
-                  style={{ 
-                    animationDelay: '0.6s',
-                    background: 'linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)',
-                  }}
-                >
-                  <BarChart3 className="w-8 h-8 text-white" />
+                <div className="text-center transform transition-all duration-300 hover:scale-105 hover-lift p-6 rounded-xl bg-white border border-border shadow-sm" style={{ animationDelay: "0.4s" }}>
+                  <div
+                    className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-accent to-teal-light flex items-center justify-center animate-pulse-slow"
+                    style={{
+                      animationDelay: "0.6s",
+                      background: "linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)",
+                    }}
+                  >
+                    <BarChart3 className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-navy mb-2">Output Report</h3>
+                  <p className="text-sm text-text-secondary">
+                    Probability scores, confidence intervals, and interpretable
+                    insights
+                  </p>
                 </div>
-                <h3 className="font-semibold text-navy mb-2">Output Report</h3>
-                <p className="text-sm text-text-secondary">
-                  Probability scores, confidence intervals, and interpretable
-                  insights
-                </p>
               </div>
             </div>
           </div>
@@ -261,24 +281,7 @@ export default function HomePage() {
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
             </div>
-            <FAQAccordion items={[
-              {
-                question: "Is this a medical device?",
-                answer: "Our product is currently in development and is intended to support research and clinical decision-making. It is not a substitute for clinician judgment and is not yet cleared for clinical use. We are working toward appropriate regulatory pathways.",
-              },
-              {
-                question: "What data do you use?",
-                answer: "Our models are designed to work with clinical data, device data, and optional biomarkers. All data handling follows strict privacy and security principles, with site-specific configuration to ensure compliance with local regulations.",
-              },
-              {
-                question: "How accurate is the prediction?",
-                answer: "Our models are in development and validation. We aim to provide responder probability estimates with confidence intervals to support clinical decision-making. Performance metrics will be validated through appropriate clinical studies.",
-              },
-              {
-                question: "When will this be available?",
-                answer: "We are currently in the research and development phase, working with clinical partners to validate our approach. Please contact us if you are interested in collaboration or early access.",
-              },
-            ]} />
+            <FAQAccordion items={faqItems} />
           </div>
         </div>
       </section>
